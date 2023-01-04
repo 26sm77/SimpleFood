@@ -106,4 +106,119 @@
   }
 }
 
+.footer-top {
+  padding: 120px 0 60px;
+  border-bottom: 1px solid rgba(194, 194, 194, .2);
+  display: flex;
+  justify-content: space-between;
+
+
+
+  &__items-form {
+    max-width: 200px;
+  }
+
+  &__logo {
+    margin-bottom: 30px;
+  }
+
+  &__form-input {
+    width: 100%;
+    padding: 13px 15px;
+    font-size: 14px;
+    color: #C2C2C2;
+    opacity: .9;
+    margin-bottom: 12px;
+    border: 1px solid #C2C2C2;
+    border-radius: 5px;
+  }
+
+  &__form-btn {
+    padding: 13px 39px 13px 70px;
+    background-color: $accent;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    background-image: url(../images/icons/vector.svg);
+    background-position-x: 23%;
+    background-position-y: center;
+    background-repeat: no-repeat;
+
+  }
+
+  &__list {
+    font-size: 18px;
+  }
+
+  &__item {
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+    &__item::before{
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: -30px;
+    }
+  &__item-local::before{
+    background-image: url(../images/icons/location.svg);
+    width: 18px;
+    height: 20px;
+  }
+
+  &__item-phone::before{
+    background-image: url(../images/icons/calling.svg);
+      width: 25px;
+      height: 22px;
+  }
+
+  &__item-mail::before{
+    background-image: url(../images/icons/message.svg);
+      width: 22px;
+      height: 20px;
+  }
+
+  &__contact {
+    font-size: 16px;
+    line-height: 2;
+  }
+
+  &__adress,
+  &__phone,
+  &__mail {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  &__social-items {
+    display: flex;
+  }
+  &__social-item{
+    margin-right: 13px;
+  }
+  &__social-item:last-child{
+    margin-right: 0;
+  }
+
+  &__social-link {
+    width: 39px;
+    height: 39px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: $social;
+  }
+
+
+}
+
+.footer-bottom {
+  font-size: 14px;
+  line-height: 1;
+  text-align: center;
+  padding: 30px;
+}
+
 @import 'media';
